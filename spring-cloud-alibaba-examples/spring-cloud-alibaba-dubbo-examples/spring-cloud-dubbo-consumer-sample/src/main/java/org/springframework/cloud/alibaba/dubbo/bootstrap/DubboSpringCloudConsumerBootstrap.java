@@ -140,7 +140,7 @@ public class DubboSpringCloudConsumerBootstrap {
             // remove User
             System.out.printf("UserService.remove(%d) : %s\n", user.getId(), userService.remove(user.getId()));
 
-        };
+        }
     }
 
     @Bean
@@ -162,7 +162,7 @@ public class DubboSpringCloudConsumerBootstrap {
             // To call /request/body/map
             callRequestBodyMap();
 
-        };
+        }
     }
 
     private void callPathVariables() {
