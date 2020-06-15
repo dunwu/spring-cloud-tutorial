@@ -5,7 +5,7 @@
 - 服务注册与发现
   - Eureka
   - Consual
-  - ZooKeeper
+  - **[ZooKeeper](https://github.com/dunwu/bigdata-tutorial/blob/master/docs/zookeeper)**
 - 负载均衡
   - Ribbon
 - 熔断、降级
