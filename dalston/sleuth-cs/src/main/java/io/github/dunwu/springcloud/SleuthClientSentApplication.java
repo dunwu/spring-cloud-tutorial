@@ -14,7 +14,7 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 @EnableDiscoveryClient
 @SpringBootApplication
-public class TraceApplication {
+public class SleuthClientSentApplication {
 
     private final Logger logger = Logger.getLogger(getClass());
 
@@ -24,14 +24,14 @@ public class TraceApplication {
         return new RestTemplate();
     }
 
-    @RequestMapping(value = "/trace-1", method = RequestMethod.GET)
+    @RequestMapping(value = "/sleuth-cs", method = RequestMethod.GET)
     public String trace() {
-        logger.info("===<call trace-1>===");
-        return restTemplate().getForEntity("http://trace-2/trace-2", String.class).getBody();
+        logger.info("===<call sleuth-cs>===");
+        return restTemplate().getForEntity("http://sleuth-cr/sleuth-cr", String.class).getBody();
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(TraceApplication.class, args);
+        SpringApplication.run(SleuthClientSentApplication.class, args);
     }
 
 }

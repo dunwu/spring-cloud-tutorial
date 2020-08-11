@@ -8,7 +8,7 @@ Zuul 的核心是一系列的 **filters**, 其作用可以类比 Servlet 框架�
 
 Zuul 把 Request route 到 用户处理逻辑 的过程中，这些 filter 参与一些过滤处理，比如 Authentication，Load Shedding 等。
 
-![](http://dunwu.test.upcdn.net/snap/20200612074421.png)
+![img](http://dunwu.test.upcdn.net/snap/20200612074421.png)
 
 Zuul 的功能特性：
 

@@ -14,19 +14,19 @@ import javax.servlet.http.HttpServletRequest;
 @RestController
 @EnableDiscoveryClient
 @SpringBootApplication
-public class TraceApplication {
+public class SleuthClientReceivedApplication {
 
 	private final Logger logger = LoggerFactory.getLogger(getClass());
 
-	@RequestMapping(value = "/trace-2", method = RequestMethod.GET)
+	@RequestMapping(value = "/sleuth-cr", method = RequestMethod.GET)
 	public String trace(HttpServletRequest request) {
-		logger.info("===<call trace-2, TraceId={}, SpanId={}>===",
+		logger.info("===<call sleuth-cr, TraceId={}, SpanId={}>===",
 				request.getHeader("X-B3-TraceId"), request.getHeader("X-B3-SpanId"));
 		return "Trace";
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(TraceApplication.class, args);
+		SpringApplication.run(SleuthClientReceivedApplication.class, args);
 	}
 
 }

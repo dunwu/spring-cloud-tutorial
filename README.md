@@ -15,4 +15,5 @@
 - 配置中心
   - Spring Cloud Config
 - 链路追踪
+  - Sleuth
   - Zipkin

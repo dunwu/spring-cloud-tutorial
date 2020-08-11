@@ -55,8 +55,8 @@
     <module>stream-consumer-self</module> <!-- 消费自己的消息 -->
 
     <!--分布式跟踪-->
-    <module>trace-1</module>
-    <module>trace-2</module>
+    <module>sleuth-cs</module>
+    <module>sleuth-cr</module>
     <module>zipkin-server</module>
     <module>zipkin-server-stream</module>
 

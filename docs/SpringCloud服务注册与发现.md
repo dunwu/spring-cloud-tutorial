@@ -2,6 +2,8 @@
 
 ## Eureka
 
+![img](http://dunwu.test.upcdn.net/snap/20200717101131.png)
+
 Eureka 是 Netflix 开源的 REST 服务发现组件，本身是一个 REST 服务。
 
 Eureka 有两种角色：Client 和 Server，作用如下：
@@ -51,3 +53,4 @@ Consul 是一个分布式高可用的系统，它包含多个组件，但是作�
 
 - [Consul 官网](https://www.consul.io/)
 - http://blog.didispace.com/spring-cloud-starter-dalston-1/
+- [深入理解Eureka](https://juejin.im/post/593cc4c25c497d006b876429)
