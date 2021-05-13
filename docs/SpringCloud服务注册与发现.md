@@ -2,7 +2,7 @@
 
 ## Eureka
 
-![img](http://dunwu.test.upcdn.net/snap/20200717101131.png)
+![img](https://raw.githubusercontent.com/dunwu/images/dev/snap/20200717101131.png)
 
 Eureka 是 Netflix 开源的 REST 服务发现组件，本身是一个 REST 服务。
 

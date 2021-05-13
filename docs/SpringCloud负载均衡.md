@@ -8,7 +8,7 @@
 
 在 Spring Cloud 中，Ribbon 与 Eureka 配合使用 ，Ribbon 就可以自动从 Eureka Server 获取服务提供者地址列表。
 
-![img](http://dunwu.test.upcdn.net/snap/20200611204136.png)
+![img](https://raw.githubusercontent.com/dunwu/images/dev/snap/20200611204136.png)
 
 - 当 Ribbon 与 Eureka 联合使用时，ribbonServerList 会被 `DiscoveryEnabledNIWSServerList` 重写，扩展成从 Eureka 注册中心中获取服务实例列表。同时它也会用 `NIWSDiscoveryPing` 来取代 `IPing`，它将职责委托给 Eureka 来确定服务端是否已经启动。
 - 而当 Ribbon 与 Consul 联合使用时，ribbonServerList 会被 `ConsulServerList` 来扩展成从 Consul 获取服务实例列表。同时由 `ConsulPing` 来作为 `IPing` 接口的实现。
